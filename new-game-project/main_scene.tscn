@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://c6jkds74fn2mm"]
+
+[ext_resource type="PackedScene" uid="uid://dcqjvoi11ion2" path="res://prefabs/jogador_azul.tscn" id="1_0f027"]
+[ext_resource type="PackedScene" uid="uid://dqqp8wajxi84d" path="res://prefabs/jogador_vermelho.tscn" id="2_2c62f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2c62f"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyfs4"]
+size = Vector2(32, 650.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5x1h"]
+size = Vector2(1152, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mm7a"]
+size = Vector2(1152, 18)
+
+[node name="main_scene" type="Node2D"]
+
+[node name="JogadorAzul" parent="." instance=ExtResource("1_0f027")]
+position = Vector2(40, 264)
+
+[node name="JogadorVermelho" parent="." instance=ExtResource("2_2c62f")]
+position = Vector2(896, 280)
+
+[node name="arena" type="StaticBody2D" parent="."]
+
+[node name="left" type="CollisionShape2D" parent="arena"]
+position = Vector2(-16, 324)
+shape = SubResource("RectangleShape2D_2c62f")
+
+[node name="right" type="CollisionShape2D" parent="arena"]
+position = Vector2(1168, 325.25)
+shape = SubResource("RectangleShape2D_gyfs4")
+
+[node name="celling" type="CollisionShape2D" parent="arena"]
+position = Vector2(576, -9)
+shape = SubResource("RectangleShape2D_d5x1h")
+
+[node name="floor" type="CollisionShape2D" parent="arena"]
+position = Vector2(576, 656)
+shape = SubResource("RectangleShape2D_8mm7a")
