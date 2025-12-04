@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c6jkds74fn2mm"]
+[gd_scene load_steps=10 format=3 uid="uid://c6jkds74fn2mm"]
 
 [ext_resource type="Script" uid="uid://c4nfh5ec0q41l" path="res://scripts/main_scene.gd" id="1_gyfs4"]
+[ext_resource type="Script" uid="uid://dsj2t068hktu" path="res://scripts/maquina_ia_bolsonaro.gd" id="3_8mm7a"]
 [ext_resource type="PackedScene" uid="uid://dnt7dhkwisam4" path="res://prefabs/maquina_ia_bolsonaro.tscn" id="3_d5x1h"]
 [ext_resource type="PackedScene" uid="uid://chewubkyhd2qo" path="res://prefabs/maquina_ia_lula.tscn" id="4_8mm7a"]
+[ext_resource type="Script" uid="uid://cwtf67a2v271m" path="res://scripts/jogador_azul_spawn.gd" id="5_hq1ik"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2c62f"]
 size = Vector2(32, 648)
@@ -38,13 +40,15 @@ position = Vector2(576, 656)
 shape = SubResource("RectangleShape2D_8mm7a")
 
 [node name="MaquinaIaBolsonaro" parent="." instance=ExtResource("3_d5x1h")]
-position = Vector2(16, 324)
+position = Vector2(24, 320)
+script = ExtResource("3_8mm7a")
 
 [node name="MaquinaIaLula" parent="." instance=ExtResource("4_8mm7a")]
-position = Vector2(1136, 325)
+position = Vector2(1128, 328)
 
 [node name="JogadorAzulSpawn" type="Node2D" parent="."]
 position = Vector2(192, 325)
+script = ExtResource("5_hq1ik")
 
 [node name="JogadorVermelhoSpawn" type="Node2D" parent="."]
 position = Vector2(960, 325)

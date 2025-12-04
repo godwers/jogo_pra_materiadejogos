@@ -25,3 +25,6 @@ one_shot = true
 [node name="Timergelo" type="Timer" parent="."]
 wait_time = 10.0
 one_shot = true
+
+[node name="TimerIsrael" type="Timer" parent="."]
+one_shot = true
