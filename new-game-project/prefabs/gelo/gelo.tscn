@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2sguxhdb4nwn"]
+[gd_scene load_steps=3 format=3 uid="uid://cy0gagift1voa"]
 
 [ext_resource type="Script" uid="uid://bg5u0j2y1lkbu" path="res://prefabs/gelo/gelo.gd" id="1_jwr3e"]
 
@@ -6,7 +6,6 @@
 size = Vector2(16, 48)
 
 [node name="Gelo" type="CharacterBody2D"]
-collision_layer = 2
 motion_mode = 1
 slide_on_ceiling = false
 wall_min_slide_angle = 0.0
@@ -18,7 +17,6 @@ offset_top = -24.0
 offset_right = 8.0
 offset_bottom = 24.0
 color = Color(0.6745098, 1, 1, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_75x0e")

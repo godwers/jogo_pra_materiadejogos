@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://c6jkds74fn2mm"]
 
-[ext_resource type="Script" uid="uid://c4nfh5ec0q41l" path="res://main_scene.gd" id="1_gyfs4"]
+[ext_resource type="Script" uid="uid://c4nfh5ec0q41l" path="res://scripts/main_scene.gd" id="1_gyfs4"]
 [ext_resource type="PackedScene" uid="uid://dnt7dhkwisam4" path="res://prefabs/maquina_ia_bolsonaro.tscn" id="3_d5x1h"]
 [ext_resource type="PackedScene" uid="uid://chewubkyhd2qo" path="res://prefabs/maquina_ia_lula.tscn" id="4_8mm7a"]
 

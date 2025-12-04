@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var jogador_azul_prefab = preload("res://prefabs/jogador_azul.tscn")
-@onready var jogador_vermelho_prefab = preload("res://prefabs/jogador_vermelho.tscn")
+@onready var jogador_azul_prefab = preload("res://prefabs/jogador_azul/jogador_azul.tscn")
+@onready var jogador_vermelho_prefab = preload("res://prefabs/jogador_vermelho/jogador_vermelho.tscn")
 
 func _ready() -> void:
 	# Spawna o jogador azul

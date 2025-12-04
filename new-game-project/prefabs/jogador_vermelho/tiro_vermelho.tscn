@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhqhxxcy5rjui"]
 
-[ext_resource type="Script" uid="uid://bx5sjjgvp46p4" path="res://scripts/tiro_vermelho.gd" id="1_4wayp"]
+[ext_resource type="Script" uid="uid://bx5sjjgvp46p4" path="res://prefabs/jogador_vermelho/tiro_vermelho.gd" id="1_0x7e3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fpyx7"]
 size = Vector2(16, 16)
 
 [node name="TiroVermelho" type="CharacterBody2D" groups=["tiros"]]
 slide_on_ceiling = false
-script = ExtResource("1_4wayp")
+script = ExtResource("1_0x7e3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -8.0

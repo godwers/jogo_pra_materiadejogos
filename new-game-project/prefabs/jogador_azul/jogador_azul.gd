@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 @onready var forca = 300
 @onready var hp = 5
-@onready var prefabs_tiro = preload("res://prefabs/tiro_azul.tscn")
-@onready var prefabs_gelo = preload("res://prefabs/gelo.tscn")
+@onready var prefabs_tiro = preload("res://prefabs/jogador_azul/tiro_azul.tscn")
+@onready var prefabs_gelo = preload("res://prefabs/gelo/gelo.tscn")
 @onready var uso_gelos = 3
 
 func _physics_process(delta: float) -> void:

@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://djpevoj7muhs1"]
 
-[ext_resource type="Script" uid="uid://bdtlbneyw2nlh" path="res://scripts/tiro_azul.gd" id="1_dbda1"]
+[ext_resource type="Script" uid="uid://bdtlbneyw2nlh" path="res://prefabs/jogador_azul/tiro_azul.gd" id="1_kopoi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_olq0v"]
 size = Vector2(16, 16)
 
 [node name="TiroAzul" type="CharacterBody2D" groups=["tiros"]]
 slide_on_ceiling = false
-script = ExtResource("1_dbda1")
+script = ExtResource("1_kopoi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_olq0v")
