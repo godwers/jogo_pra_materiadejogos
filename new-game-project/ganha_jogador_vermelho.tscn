@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://65b648kw4om6"]
+
+[node name="ganha_jogador_vermelho" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 592.0
+offset_bottom = 256.0
+text = "JOGADOR 2 GANHOU"

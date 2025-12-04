@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dc1mcxm2wqkev"]
+
+[node name="jogador1_ganhou" type="Node2D"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 456.0
+offset_bottom = 200.0
+text = "JOGADOR 1 GANHOU"
